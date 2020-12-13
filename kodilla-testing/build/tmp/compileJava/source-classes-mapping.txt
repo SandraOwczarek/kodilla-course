@@ -1,0 +1,4 @@
+com/kodilla/testing/user/SimpleUser.java
+ com.kodilla.testing.user.SimpleUser
+com/kodilla/testing/collection/OddNumbersExterminator.java
+ com.kodilla.testing.collection.OddNumbersExterminator

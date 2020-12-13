@@ -1,0 +1,6 @@
+Test Case: test #1 begin
+testing result: true
+Test Case: OK
+Test Case: test #2 begin
+testing result: [2, 4, 56, 64]
+Test Case: OK
