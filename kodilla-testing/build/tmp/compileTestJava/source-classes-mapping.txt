@@ -1,0 +1,4 @@
+com/kodilla/testing/shape/ShapeCollectorTestSuite.java
+ com.kodilla.testing.shape.ShapeCollectorTestSuite
+ com.kodilla.testing.shape.ShapeCollectorTestSuite$TestWithReturning
+ com.kodilla.testing.shape.ShapeCollectorTestSuite$TestWithoutReturning
