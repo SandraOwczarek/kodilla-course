@@ -54,4 +54,3 @@ public class ShapeCollectorTestSuite {
         Assert.assertEquals(square, retrievedShape);
     }
 }
-
