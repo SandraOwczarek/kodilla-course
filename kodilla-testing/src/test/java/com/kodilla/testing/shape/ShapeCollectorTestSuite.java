@@ -41,25 +41,45 @@ public class ShapeCollectorTestSuite {
         ShapeCollector shapeCollector = new ShapeCollector();
         Square square = new Square(4);
         Triangle triangle = new Triangle(2,3);
-        //When
         shapeCollector.addFigure(square);
         shapeCollector.addFigure(triangle);
+        //When
         shapeCollector.removeFigure(square);
         //Then
         Assert.assertEquals(triangle,shapeCollector.getFigure(0));
     }
     @Test
-    public void testGetFigure(){
+    public void testGetFigure() {
         //Given
-        ShapeCollector shapeCollector = new ShapeCollector();
-        Square square = new Square(4);
-        Circle circle = new Circle(4);
+        Square square = new Square(2);
+        Circle circle = new Circle(1);
+        Triangle triangle = new Triangle(2, 3);
+        ShapeCollector shapeCollectorTest = new ShapeCollector();
+        shapeCollectorTest.addFigure(square);
+        shapeCollectorTest.addFigure(circle);
+        shapeCollectorTest.addFigure(triangle);
         //When
-        shapeCollector.addFigure(square);
-        shapeCollector.addFigure(circle);
+        Shape shape1 = shapeCollectorTest.getFigure(0);
+        Shape shape2 = shapeCollectorTest.getFigure(1);
+        Shape shape3 = shapeCollectorTest.getFigure(2);
         //Then
-        Assert.assertEquals(square,shapeCollector.getFigure(0));
-        Assert.assertEquals(circle,shapeCollector.getFigure(1));
+        Assert.assertEquals(square, shape1);
+        Assert.assertEquals(circle, shape2);
+        Assert.assertEquals(triangle, shape3);
+    }
+
+    @Test
+    public void testShowFigures() {
+        //given
+        ShapeCollector shapeCollector = new ShapeCollector();
+        Circle circle = new Circle(10);
+        Triangle triangle = new Triangle(5, 3);
+        Square square = new Square(12);
+        shapeCollector.addFigure(circle);
+        shapeCollector.addFigure(triangle);
+        shapeCollector.addFigure(square);
+        //when
+        shapeCollector.showFigures();
     }
 
 }
