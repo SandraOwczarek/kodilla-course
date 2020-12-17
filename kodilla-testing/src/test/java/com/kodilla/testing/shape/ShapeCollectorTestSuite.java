@@ -1,6 +1,7 @@
 package com.kodilla.testing.shape;
 
 import org.junit.*;
+import org.junit.jupiter.api.Assertions;
 
 public class ShapeCollectorTestSuite {
 
@@ -70,16 +71,17 @@ public class ShapeCollectorTestSuite {
 
     @Test
     public void testShowFigures() {
-        //given
+        //Given
         ShapeCollector shapeCollector = new ShapeCollector();
-        Circle circle = new Circle(10);
-        Triangle triangle = new Triangle(5, 3);
-        Square square = new Square(12);
-        shapeCollector.addFigure(circle);
-        shapeCollector.addFigure(triangle);
-        shapeCollector.addFigure(square);
-        //when
-        shapeCollector.showFigures();
+        Circle Circle = new Circle(10);
+        Triangle Triangle = new Triangle(5, 3);
+        Square Square = new Square(12);
+        shapeCollector.addFigure(Circle);
+        shapeCollector.addFigure(Triangle);
+        shapeCollector.addFigure(Square);
+        //When
+        String result = shapeCollector.showFigures();
+        //Then
+        Assertions.assertEquals("Circle, Triangle, Square", result);
     }
-
 }
