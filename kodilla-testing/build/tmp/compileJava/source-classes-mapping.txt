@@ -4,6 +4,8 @@ com/kodilla/testing/shape/Shape.java
  com.kodilla.testing.shape.Shape
 com/kodilla/testing/user/SimpleUser.java
  com.kodilla.testing.user.SimpleUser
+com/kodilla/testing/weather/stub/Temperatures.java
+ com.kodilla.testing.weather.stub.Temperatures
 com/kodilla/testing/shape/Circle.java
  com.kodilla.testing.shape.Circle
 com/kodilla/testing/shape/Square.java
@@ -12,3 +14,5 @@ com/kodilla/testing/collection/OddNumbersExterminator.java
  com.kodilla.testing.collection.OddNumbersExterminator
 com/kodilla/testing/shape/ShapeCollector.java
  com.kodilla.testing.shape.ShapeCollector
+com/kodilla/testing/weather/stub/WeatherForecast.java
+ com.kodilla.testing.weather.stub.WeatherForecast
