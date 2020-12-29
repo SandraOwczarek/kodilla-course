@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.stream.world.WorldTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-29T17:15:07" hostname="iMac-Sandra.local" time="0.02">
+  <properties/>
+  <testcase name="testGetPeopleQuantity()" classname="com.kodilla.stream.world.WorldTestSuite" time="0.02"/>
+  <system-out><![CDATA[Countries in our world:
+Poland, Slovakia, Portugal, Russia, Turkey, Japan, USA, Samoa, Egypt, ]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

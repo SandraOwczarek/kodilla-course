@@ -1,8 +1,8 @@
 package com.kodilla.stream.beautifier;
 
 public class PoemBeautifier {
-    public void beautify(String a, PoemDecorator poemDecorator) {
-        String result = poemDecorator.decorate(a);
-        System.out.println("Result equals: " + result);
+    public void beautify(String abc, PoemDecorator poemDecorator) {
+        String result = poemDecorator.decorate(abc);
+        System.out.println("Result is : " + result);
     }
 }
