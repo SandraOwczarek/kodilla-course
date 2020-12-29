@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TDD: Statistics Calculator Test Suite" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-12-23T18:38:27" hostname="MacBook-Air-Sandra.local" time="0.22">
+  <properties/>
+  <testcase name="when create userNames list with users data and number of comments, then calculateAdvStatistics should show the average user comments" classname="com.kodilla.testing.forum.statistics.StatisticsCalculatorTestSuite" time="0.11"/>
+  <testcase name="when create comments list with and posts list, then calculateAdvStatistics should show the average comment to post" classname="com.kodilla.testing.forum.statistics.StatisticsCalculatorTestSuite" time="0.026"/>
+  <testcase name="when create userNames list with users data and number of posts, then calculateAdvStatistics should show the average user posts" classname="com.kodilla.testing.forum.statistics.StatisticsCalculatorTestSuite" time="0.008"/>
+  <testcase name="when create comments list with comments data, then calculateAdvStatistics should show the quantity of comments" classname="com.kodilla.testing.forum.statistics.StatisticsCalculatorTestSuite" time="0.009"/>
+  <testcase name="when create posts list with posts data, then calculateAdvStatistics should show the quantity of posts" classname="com.kodilla.testing.forum.statistics.StatisticsCalculatorTestSuite" time="0.01"/>
+  <testcase name="when create usersNames list with users data, then calculateAdvStatistics should show the quantity of users" classname="com.kodilla.testing.forum.statistics.StatisticsCalculatorTestSuite" time="0.043"/>
+  <system-out><![CDATA[This is the beginning of tests.
+Preparing to execute test #1
+Preparing to execute test #2
+Preparing to execute test #3
+Preparing to execute test #4
+Preparing to execute test #5
+Preparing to execute test #6
+All tests are finished.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

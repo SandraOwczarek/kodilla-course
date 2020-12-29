@@ -1,16 +1,16 @@
 com/kodilla/testing/weather/stub/WeatherForecastTestSuite.java
  com.kodilla.testing.weather.stub.WeatherForecastTestSuite
-com/kodilla/testing/weather/stub/TemperaturesStub.java
- com.kodilla.testing.weather.stub.TemperaturesStub
-com/kodilla/testing/weather/mock/WeatherForecastTestSuite.java
- com.kodilla.testing.weather.mock.WeatherForecastTestSuite
-com/kodilla/testing/shape/ShapeCollectorTestSuite.java
- com.kodilla.testing.shape.ShapeCollectorTestSuite
-com/kodilla/testing/library/BookDirectoryTestSuite.java
- com.kodilla.testing.library.BookDirectoryTestSuite
 com/kodilla/testing/forum/tdd/ForumTestSuite.java
  com.kodilla.testing.forum.tdd.ForumTestSuite
  com.kodilla.testing.forum.tdd.ForumTestSuite$TestComments
  com.kodilla.testing.forum.tdd.ForumTestSuite$TestPosts
+com/kodilla/testing/library/BookDirectoryTestSuite.java
+ com.kodilla.testing.library.BookDirectoryTestSuite
 com/kodilla/testing/forum/statistics/StatisticsCalculatorTestSuite.java
  com.kodilla.testing.forum.statistics.StatisticsCalculatorTestSuite
+com/kodilla/testing/weather/mock/WeatherForecastTestSuite.java
+ com.kodilla.testing.weather.mock.WeatherForecastTestSuite
+com/kodilla/testing/shape/ShapeCollectorTestSuite.java
+ com.kodilla.testing.shape.ShapeCollectorTestSuite
+com/kodilla/testing/weather/stub/TemperaturesStub.java
+ com.kodilla.testing.weather.stub.TemperaturesStub

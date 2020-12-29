@@ -26,11 +26,11 @@ com/kodilla/testing/library/LibraryDatabase.java
  com.kodilla.testing.library.LibraryDatabase
 com/kodilla/testing/forum/tdd/ForumComment.java
  com.kodilla.testing.forum.tdd.ForumComment
-com/kodilla/testing/forum/tdd/ForumUser.java
- com.kodilla.testing.forum.tdd.ForumUser
+com/kodilla/testing/forum/tdd/ForumPost.java
+ com.kodilla.testing.forum.tdd.ForumPost
 com/kodilla/testing/forum/statistics/StatisticsCalculator.java
  com.kodilla.testing.forum.statistics.StatisticsCalculator
 com/kodilla/testing/forum/statistics/Statistics.java
  com.kodilla.testing.forum.statistics.Statistics
-com/kodilla/testing/forum/tdd/ForumPost.java
- com.kodilla.testing.forum.tdd.ForumPost
+com/kodilla/testing/forum/tdd/ForumUser.java
+ com.kodilla.testing.forum.tdd.ForumUser
