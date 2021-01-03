@@ -1,2 +1,18 @@
-package com.kodilla.exception.test;public class ExceptionHandling {
+package com.kodilla.exception.test;
+
+public class ExceptionHandling {
+    public static void main(String[] args) throws Exception {
+        SecondChallenge secondChallenge = new SecondChallenge();
+        try {
+            String s = secondChallenge.probablyIWillThrowException(2, 1);
+            System.out.println(s);
+        } catch (Exception e) {
+            System.out.println("Problem " + e);
+
+        } finally {
+            System.out.println("Exception done !!!");
+
+        }
+
+    }
 }

@@ -1,4 +1,4 @@
-package com.kodilla.exeption.test;
+package com.kodilla.exception.test;
 
 import org.junit.jupiter.api.Test;
 

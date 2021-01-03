@@ -1,36 +1,36 @@
+com/kodilla/testing/forum/tdd/ForumComment.java
+ com.kodilla.testing.forum.tdd.ForumComment
+com/kodilla/testing/weather/stub/Temperatures.java
+ com.kodilla.testing.weather.stub.Temperatures
+com/kodilla/testing/shape/Circle.java
+ com.kodilla.testing.shape.Circle
+com/kodilla/testing/collection/OddNumbersExterminator.java
+ com.kodilla.testing.collection.OddNumbersExterminator
+com/kodilla/testing/library/Book.java
+ com.kodilla.testing.library.Book
+com/kodilla/testing/shape/ShapeCollector.java
+ com.kodilla.testing.shape.ShapeCollector
+com/kodilla/testing/library/LibraryDatabase.java
+ com.kodilla.testing.library.LibraryDatabase
 com/kodilla/testing/shape/Triangle.java
  com.kodilla.testing.shape.Triangle
 com/kodilla/testing/shape/Shape.java
  com.kodilla.testing.shape.Shape
 com/kodilla/testing/user/SimpleUser.java
  com.kodilla.testing.user.SimpleUser
-com/kodilla/testing/weather/stub/Temperatures.java
- com.kodilla.testing.weather.stub.Temperatures
-com/kodilla/testing/shape/Circle.java
- com.kodilla.testing.shape.Circle
-com/kodilla/testing/shape/Square.java
- com.kodilla.testing.shape.Square
-com/kodilla/testing/collection/OddNumbersExterminator.java
- com.kodilla.testing.collection.OddNumbersExterminator
-com/kodilla/testing/shape/ShapeCollector.java
- com.kodilla.testing.shape.ShapeCollector
-com/kodilla/testing/weather/stub/WeatherForecast.java
- com.kodilla.testing.weather.stub.WeatherForecast
-com/kodilla/testing/library/LibraryUser.java
- com.kodilla.testing.library.LibraryUser
-com/kodilla/testing/library/Book.java
- com.kodilla.testing.library.Book
-com/kodilla/testing/library/BookLibrary.java
- com.kodilla.testing.library.BookLibrary
-com/kodilla/testing/library/LibraryDatabase.java
- com.kodilla.testing.library.LibraryDatabase
-com/kodilla/testing/forum/tdd/ForumComment.java
- com.kodilla.testing.forum.tdd.ForumComment
-com/kodilla/testing/forum/tdd/ForumPost.java
- com.kodilla.testing.forum.tdd.ForumPost
-com/kodilla/testing/forum/statistics/StatisticsCalculator.java
- com.kodilla.testing.forum.statistics.StatisticsCalculator
-com/kodilla/testing/forum/statistics/Statistics.java
- com.kodilla.testing.forum.statistics.Statistics
 com/kodilla/testing/forum/tdd/ForumUser.java
  com.kodilla.testing.forum.tdd.ForumUser
+com/kodilla/testing/shape/Square.java
+ com.kodilla.testing.shape.Square
+com/kodilla/testing/forum/statistics/Statistics.java
+ com.kodilla.testing.forum.statistics.Statistics
+com/kodilla/testing/library/LibraryUser.java
+ com.kodilla.testing.library.LibraryUser
+com/kodilla/testing/forum/tdd/ForumPost.java
+ com.kodilla.testing.forum.tdd.ForumPost
+com/kodilla/testing/library/BookLibrary.java
+ com.kodilla.testing.library.BookLibrary
+com/kodilla/testing/forum/statistics/CalculateStatistic.java
+ com.kodilla.testing.forum.statistics.CalculateStatistic
+com/kodilla/testing/weather/stub/WeatherForecast.java
+ com.kodilla.testing.weather.stub.WeatherForecast
