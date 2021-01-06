@@ -12,3 +12,23 @@ com/kodilla/exception/test/ExceptionHandling.java
  com.kodilla.exception.test.ExceptionHandling
 com/kodilla/exception/test/SecondChallenge.java
  com.kodilla.exception.test.SecondChallenge
+com/kodilla/exception/nullpointer/User.java
+ com.kodilla.exception.nullpointer.User
+com/kodilla/exception/nullpointer/MessageSender.java
+ com.kodilla.exception.nullpointer.MessageSender
+com/kodilla/exception/nullpointer/NullPointerExceptionRunner.java
+ com.kodilla.exception.nullpointer.NullPointerExceptionRunner
+com/kodilla/exception/nullpointer/MessageNotSentException.java
+ com.kodilla.exception.nullpointer.MessageNotSentException
+com/kodilla/exception/index/VideoCollector.java
+ com.kodilla.exception.index.VideoCollector
+com/kodilla/exception/index/IndexExceptionRunner.java
+ com.kodilla.exception.index.IndexExceptionRunner
+com/kodilla/exception/test/Flight.java
+ com.kodilla.exception.test.Flight
+com/kodilla/exception/test/RouteNotFoundException.java
+ com.kodilla.exception.test.RouteNotFoundException
+com/kodilla/exception/test/FlightFinder.java
+ com.kodilla.exception.test.FlightFinder
+com/kodilla/exception/test/FlightMain.java
+ com.kodilla.exception.test.FlightMain
