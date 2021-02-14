@@ -1,2 +1,4 @@
-package challenges;public class ProductOrderService {
+package challenges;
+
+public class ProductOrderService {
 }
