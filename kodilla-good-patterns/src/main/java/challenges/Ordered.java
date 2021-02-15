@@ -1,17 +1,19 @@
 package challenges;
 
 public class Ordered {
-    public User user;
-    public boolean isOrdered;
+    private User user;
+    private boolean isSold;
 
-    public Ordered(User user, boolean isOrdered) {
+    public void OrderDto(User user, boolean isSold) {
         this.user = user;
-        this.isOrdered = isOrdered;
+        this.isSold = isSold;
     }
+
     public User getUser() {
         return user;
     }
-    public boolean isOrdered() {
-        return isOrdered;
+
+    public boolean isSold() {
+        return isSold;
     }
 }

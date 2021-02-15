@@ -1,12 +1,13 @@
 package challenges;
 
-public class OnlineShop {
+public class  OnlineShop {
+
     public static void main(String[] args) {
 
-        OrderRequestRetriever orderRequestRetriever = new OrderRequestRetriever();
-        OrderRequest orderRequest = orderRequestRetriever.retrieve();
-
-        ProductOrderService productOrderService = new ProductOrderService(new Message(),new Order(),new Repository());
+        OrderRequest orderRequest = new OrderRequest(new User("Sandra", "Owczarek", "monkey@monkey.com"),
+                new Product("Trousers", 300, 1));
+        ProductOrderService productOrderService = new ProductOrderService(
+                new MailService(), new OrderImpl(new OrderSaleRepository()));
         productOrderService.process(orderRequest);
     }
 }

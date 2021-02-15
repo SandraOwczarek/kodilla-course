@@ -1,12 +1,10 @@
 package challenges;
 
-import java.util.*;
-
-public class OrderImpl implements OrderRepository {
+public class OrderImpl implements OrderService {
     private final OrderRepository orderRepository;
 
-    public SaleServiceImpl(OrderRepository saleRepository) {
-        this.orderRepository = saleRepository;
+    public OrderImpl(OrderRepository orderRepository) {
+        this.orderRepository = orderRepository;
     }
 
     @Override
@@ -14,4 +12,4 @@ public class OrderImpl implements OrderRepository {
         orderRepository.createSale(user, product);
     }
 
-}}
+}

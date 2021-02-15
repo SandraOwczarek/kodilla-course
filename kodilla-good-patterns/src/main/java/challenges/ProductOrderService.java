@@ -1,23 +1,15 @@
 package challenges;
 
 public class ProductOrderService {
-
-    private HelpDesk helpDesk;
+    private final HelpDesk helpDesk;
     private final OrderService orderService;
-    private final OrderRepository orderRepository;
-
-    public ProductOrderService(HelpDesk helpDesk, OrderService orderService, OrderRepository orderRepository) {
+    public ProductOrderService(HelpDesk helpDesk,
+                               OrderService orderService) {
         this.helpDesk = helpDesk;
         this.orderService = orderService;
-        this.orderRepository = orderRepository;
     }
-
-    public Ordered process(final OrderRequest orderRequest) {
-        boolean isOrdered = orderService.order(orderRequest);
-        if (isOrdered) {
-            helpDesk.sendMessage(orderRequest.getUser());
-            orderRepository.createOrder(orderRequest);
-            return new Ordered(orderRequest.getUser(), true);
-        } else return new Ordered(orderRequest.getUser(), false);
+    public void process(final OrderRequest orderRequest) {
+        orderService.createSell(orderRequest.getUser(), orderRequest.getItem());
+        helpDesk.inform(orderRequest.getUser(), orderRequest.getItem());
     }
 }
