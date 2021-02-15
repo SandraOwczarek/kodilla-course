@@ -1,2 +1,5 @@
-package challenges;public interface HelpDesk {
+package challenges;
+
+public interface HelpDesk {
+    void sendMessage (User user);
 }

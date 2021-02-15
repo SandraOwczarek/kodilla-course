@@ -1,8 +1,8 @@
 package challenges;
 
 class OrderRequest {
-    private User user;
-    private Product product;
+    private final User user;
+    private final Product product;
     public OrderRequest(User user, Product product) {
         this.user = user;
         this.product = product;
