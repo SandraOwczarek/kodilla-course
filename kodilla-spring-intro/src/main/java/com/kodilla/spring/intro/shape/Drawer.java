@@ -1,14 +1,15 @@
 package com.kodilla.spring.intro.shape;
 
-package com.kodilla.spring.intro.shape;
-
 public class Drawer {
 
-    public void doDrawing() {
-        Circle circle = new Circle();
-        Triangle triangle = new Triangle();
+    final Shape shape;
 
-        circle.draw();
-        triangle.draw();
+    public Drawer(final Shape shape) {
+        this.shape = shape;
+    }
+
+    public String doDrawing() {
+        return shape.draw();
     }
 }
+

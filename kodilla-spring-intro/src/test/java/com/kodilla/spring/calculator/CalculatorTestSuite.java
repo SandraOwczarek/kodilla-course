@@ -6,12 +6,14 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
 @SpringBootTest
 public class CalculatorTestSuite {
+
     @Test
     void testCalculations(){
         //given
-        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.calculator");
         Calculator calculator = context.getBean(Calculator.class);
         //when
         double addResult = calculator.add(2,2);
