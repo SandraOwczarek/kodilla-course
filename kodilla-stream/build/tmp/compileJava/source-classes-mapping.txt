@@ -14,6 +14,8 @@ com/kodilla/stream/forum/ForumUser.java
  com.kodilla.stream.forum.ForumUser
 com/kodilla/stream/lambda/ExecuteSaySomething.java
  com.kodilla.stream.lambda.ExecuteSaySomething
+com/kodilla/stream/beautifier/Main.java
+ com.kodilla.stream.beautifier.Main
 com/kodilla/stream/portfolio/Board.java
  com.kodilla.stream.portfolio.Board
 com/kodilla/stream/portfolio/TaskList.java
@@ -50,5 +52,3 @@ com/kodilla/stream/world/World.java
  com.kodilla.stream.world.World
 com/kodilla/stream/beautifier/PoemBeautifier.java
  com.kodilla.stream.beautifier.PoemBeautifier
-com/kodilla/stream/beautifier/Main.java
- com.kodilla.stream.beautifier.Main
