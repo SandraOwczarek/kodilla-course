@@ -6,13 +6,16 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class BoardConfig {
+
     @Bean
-    public Board getBoard(){
+    public Board getBoard()  {
         return new Board(getTaskList(),getTaskList(),getTaskList());
     }
+
     @Bean
     @Scope("prototype")
     public TaskList getTaskList() {
         return new TaskList();
     }
+
 }
