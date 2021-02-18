@@ -23,7 +23,7 @@ public class BoardTestSuite {
         board.getDoneList().addTask(taskDone);
         //Then
         Assertions.assertEquals("Buy groceries", board.getToDoList().getTasks().get(0));
-        Assertions.assertEquals("Coking Dinner", board.getInProgressList().getTasks().get(0));
+        Assertions.assertEquals("Cooking Dinner", board.getInProgressList().getTasks().get(0));
         Assertions.assertEquals("Clean after dinner", board.getDoneList().getTasks().get(0));
     }
 }
