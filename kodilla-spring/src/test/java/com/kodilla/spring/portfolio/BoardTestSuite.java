@@ -16,7 +16,7 @@ public class BoardTestSuite {
         Board board = context.getBean(Board.class);
         //When
         String taskToDo = "Buy groceries";
-        String taskInProgress = "Coking Dinner";
+        String taskInProgress = "Cooking Dinner";
         String taskDone = "Clean after dinner";
         board.getToDoList().addTask(taskToDo);
         board.getInProgressList().addTask(taskInProgress);
