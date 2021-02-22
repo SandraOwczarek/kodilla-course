@@ -2,17 +2,17 @@ package com.kodilla.patterns.factory.tasks;
 
 public final class TaskFactory {
 
-    public static final String FIRST_VARIABLE = "VARIABLE_FIRST";
-    public static final String SECOND_VARIABLE = "VARIABLE_SECOND";
-    public static final String THIRD_VARIABLE = "VARIABLE_THIRD";
+    public static final String SHOOPING_TASK = "SHOOPING_TASK";
+    public static final String PAINTING_TASK = "PAINTING_TASK";
+    public static final String DRIVING_TASK = "DRIVING_TASK";
 
     public final Task makeTask(final String taskClass) {
         switch (taskClass) {
-            case FIRST_VARIABLE:
+            case SHOOPING_TASK:
                 return new ShoppingTask("Let's go to shop and buy", "bread", 10);
-            case SECOND_VARIABLE:
+            case PAINTING_TASK:
                 return new PaintingTask("Let's paint for mom", "red", "flowers");
-            case THIRD_VARIABLE:
+            case DRIVING_TASK:
                 return new DrivingTask("Let's drive to", "airport", "shuttle bus");
             default:
                 return null;

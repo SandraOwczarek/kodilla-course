@@ -1,2 +1,4 @@
-package com.kodilla.patterns.builder.bigmac;public class BigmacTestSuite {
+package com.kodilla.patterns.builder.bigmac;
+
+public class BigmacTestSuite {
 }
