@@ -1,7 +1,8 @@
 package com.kodilla.patterns.strategy.social;
 
 public class SnapchatPublisher implements SocialPublisher {
-    public void share() {
-        System.out.println("Snapchat");
+    @Override
+    public String share() {
+        return "My 1st Snapchat Story";
     }
 }
