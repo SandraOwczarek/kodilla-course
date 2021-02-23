@@ -19,4 +19,7 @@ public class User {
     public void setSharingPreferences(SocialPublisher socialPublisher) {
         this.socialPublisher = socialPublisher;
     }
+    public void setSocialPublisher(SocialPublisher socialPublisher) {
+        this.socialPublisher = socialPublisher;
+    }
 }

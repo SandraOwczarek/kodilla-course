@@ -12,9 +12,9 @@ public class UserTestSuite {
         User user3 = new Millenials("Jenny Heimen");
 
         //When
-        System.out.println("Sandra just posted: " + user1.sharePost());
-        System.out.println("Benedikt just posted: " + user2.sharePost());
-        System.out.println("Jenny just posted: " + user3.sharePost());
+        String user1Publisher = user1.sharePost();
+        String user2Publisher = user2.sharePost();
+        String user3Publisher = user3.sharePost();
 
         //Then
         Assert.assertEquals("My 1st Snapchat Story", user1.sharePost());
@@ -25,14 +25,20 @@ public class UserTestSuite {
     @Test
     public void testIndividualSharingStrategy() {
         //Given
-        User user = new YGeneration("Karl Svela");
+        User user1 = new YGeneration("Sandra Owczarek");
+        User user2 = new ZGeneration("Benedikt Oddsson");
+        User user3 = new Millenials("Jenny Heimen");
 
         //When
-        System.out.println("Karl just posted: " + user.sharePost());
-        user.setSharingPreferences(new FacebookPublisher());
-        System.out.println("Karl just posted: " + user.sharePost());
-
+        user1.setSocialPublisher(new TwitterPublisher());
+        user2.setSocialPublisher(new SnapchatPublisher());
+        user3.setSocialPublisher(new FacebookPublisher());
+        String user1Publisher = user1.sharePost();
+        String user2Publisher = user2.sharePost();
+        String user3Publisher = user3.sharePost();
         //Then
-        Assert.assertEquals("My 1st Facebook Post", user.sharePost());
+        Assert.assertEquals("My 1st Twitter Post", user1Publisher);
+        Assert.assertEquals("My 1st Snapchat Story", user2Publisher);
+        Assert.assertEquals("My 1st Facebook Post", user3Publisher);
     }
 }
