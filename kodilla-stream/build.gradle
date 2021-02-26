@@ -2,17 +2,19 @@ plugins {
     id 'java'
 }
 
-version 'unspecified'
+group 'com.kodilla'
+version '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-}
-
-test {
-    useJUnitPlatform()
+    implementation 'org.testng:testng:7.1.0'
+    testCompile('junit:junit:4.12')
+    testCompile('org.mockito:mockito-core:2.24.0')
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.7.0"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.7.0"
 }

@@ -1,7 +1,11 @@
 com/kodilla/stream/iterate/NumbersGenerator.java
  com.kodilla.stream.iterate.NumbersGenerator
+com/kodilla/stream/invoice/simple/SimpleItem.java
+ com.kodilla.stream.invoice.simple.SimpleItem
 com/kodilla/stream/portfolio/User.java
  com.kodilla.stream.portfolio.User
+com/kodilla/stream/invoice/simple/SimpleInvoice.java
+ com.kodilla.stream.invoice.simple.SimpleInvoice
 com/kodilla/stream/lambda/MathExpression.java
  com.kodilla.stream.lambda.MathExpression
 com/kodilla/stream/immutable/ForumUser.java
@@ -32,6 +36,8 @@ com/kodilla/stream/forumuser/Forum.java
  com.kodilla.stream.forumuser.Forum
 com/kodilla/stream/StreamMain.java
  com.kodilla.stream.StreamMain
+com/kodilla/stream/invoice/simple/SimpleProduct.java
+ com.kodilla.stream.invoice.simple.SimpleProduct
 com/kodilla/stream/forumuser/ForumUser.java
  com.kodilla.stream.forumuser.ForumUser
 com/kodilla/stream/array/ArrayOperations.java
