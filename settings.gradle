@@ -1,3 +1,12 @@
-rootProject.name = 'demo'
+rootProject.name = 'kodilla-course'
 include 'kodilla-jdbc'
+include 'kodilla-hibernate'
+include 'kodilla-exception'
+include 'kodilla-good-patterns'
+include 'kodilla-patterns'
+include 'kodilla-spring'
+include 'kodilla-spring-intro'
+include 'kodilla-spring-web'
+include 'kodilla-stream'
+include 'kodilla-testing'
 
