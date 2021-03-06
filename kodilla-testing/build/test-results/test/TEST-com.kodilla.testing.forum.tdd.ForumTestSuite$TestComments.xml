@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test for comments" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-02-17T19:02:42" hostname="iMac-Sandra.local" time="0.024">
+<testsuite name="Test for comments" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-03-05T18:52:14" hostname="iMac-Sandra.local" time="0.009">
   <properties/>
-  <testcase name="testRemoveCommentNotExisting()" classname="com.kodilla.testing.forum.tdd.ForumTestSuite$TestComments" time="0.019"/>
+  <testcase name="testRemoveCommentNotExisting()" classname="com.kodilla.testing.forum.tdd.ForumTestSuite$TestComments" time="0.004"/>
   <testcase name="testRemoveComment()" classname="com.kodilla.testing.forum.tdd.ForumTestSuite$TestComments" time="0.001"/>
   <testcase name="testGetComment()" classname="com.kodilla.testing.forum.tdd.ForumTestSuite$TestComments" time="0.001"/>
-  <testcase name="testAddComment()" classname="com.kodilla.testing.forum.tdd.ForumTestSuite$TestComments" time="0.001"/>
+  <testcase name="testAddComment()" classname="com.kodilla.testing.forum.tdd.ForumTestSuite$TestComments" time="0.0"/>
   <system-out><![CDATA[Preparing to execute test #1
 Preparing to execute test #2
 Preparing to execute test #3

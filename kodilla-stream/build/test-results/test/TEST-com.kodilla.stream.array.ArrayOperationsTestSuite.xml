@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.stream.array.ArrayOperationsTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-29T19:27:45" hostname="iMac-Sandra.local" time="0.026">
-  <properties/>
-  <testcase name="testGetAverage()" classname="com.kodilla.stream.array.ArrayOperationsTestSuite" time="0.026"/>
-  <system-out><![CDATA[11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
