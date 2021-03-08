@@ -1,51 +1,47 @@
 package challenges.flights;
 
-import java.util.Objects;
-
 public class Flight {
-    String startPoint;
-    String endPoint;
+    private String departureAirport;
+    private String arrivalAirport;
 
-    public Flight(String startPoint, String endPoint) {
-        this.startPoint = startPoint;
-        this.endPoint = endPoint;
+    public Flight(String departureAirport, String arrivalAirport) {
+        this.departureAirport = departureAirport;
+        this.arrivalAirport = arrivalAirport;
     }
 
-
-    public String getStartPoint() {
-        return startPoint;
+    public String getDepartureAirport() {
+        return departureAirport;
     }
 
-    public void setStartPoint(String startPoint) {
-        this.startPoint = startPoint;
+    public String getArrivalAirport() {
+        return arrivalAirport;
     }
 
-    public String getEndPoint() {
-        return endPoint;
-    }
-
-    public void setEndPoint(String endPoint) {
-        this.endPoint = endPoint;
+    @Override
+    public String toString() {
+        return "Flight{" +
+                "departureAirport='" + departureAirport + '\'' +
+                ", arrivalAirport='" + arrivalAirport + '\'' +
+                '}';
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         Flight flight = (Flight) o;
-        return startPoint.equals(flight.startPoint) && endPoint.equals(flight.endPoint);
+
+        if (departureAirport != null ? !departureAirport.equals(flight.departureAirport) : flight.departureAirport != null)
+            return false;
+        return arrivalAirport != null ? arrivalAirport.equals(flight.arrivalAirport) : flight.arrivalAirport == null;
+
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(startPoint, endPoint);
-    }
-
-    @Override
-    public String toString() {
-        return "Flight{" +
-                "startPoint='" + startPoint + '\'' +
-                ", endPoint='" + endPoint + '\'' +
-                '}';
+        int result = departureAirport != null ? departureAirport.hashCode() : 0;
+        result = 31 * result + (arrivalAirport != null ? arrivalAirport.hashCode() : 0);
+        return result;
     }
 }
