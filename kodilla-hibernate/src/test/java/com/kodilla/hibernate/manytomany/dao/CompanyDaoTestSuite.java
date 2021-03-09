@@ -70,22 +70,18 @@ public class CompanyDaoTestSuite {
 
     @Test
     public void testSaveManyToMany(){
-        //Given
-
-        //When
 
         //Then
         Assert.assertNotEquals(0, softwareMachineId);
         Assert.assertNotEquals(0, dataMaestersId);
         Assert.assertNotEquals(0, greyMatterId);
 
-        //CleanUp
+
 
     }
 
     @Test
     public void testFindByLastname() {
-        //Given
 
         //When
         List<Employee> actualEmployee = employeeDao.findByLastname("Smith");
@@ -93,21 +89,18 @@ public class CompanyDaoTestSuite {
         //Then
         Assert.assertEquals(1, actualEmployee.size());
 
-        //CleanUp
+
 
     }
 
     @Test
     public void testFindByFirstThreeLetters() {
-        //Given
 
         //When
         List<Company> greyCompany = companyDao.findByFirstThreeLetters("Sof");
 
         //Then
         Assert.assertEquals(1, greyCompany.size());
-
-        //CleanUp
 
     }
 }
