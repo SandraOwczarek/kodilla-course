@@ -7,19 +7,19 @@ public class FlightScanner {
     private FlightDatabase flightDatabase = new FlightDatabase();
     private Set<Flight> flightSet = flightDatabase.getFlightSet();
 
-    public void lookForArrivalAirport(String airport) {
+    public void printArrivalAirport(String airport) {
         flightSet.stream()
                 .filter(f -> f.getArrivalAirport().equals(airport))
                 .forEach(System.out::println);
     }
 
-    public void lookForDepartureAirport(String airport) {
+    public void printDepartureAirport(String airport) {
         flightSet.stream()
                 .filter(f -> f.getDepartureAirport().equals(airport))
                 .forEach(System.out::println);
     }
 
-    public void lookForConnectingAirport(String airport1, String airport2) {
+    public void printConnectingAirport(String airport1, String airport2) {
         Set<Flight> flightSet1 = flightSet.stream()
                 .filter(f -> f.getArrivalAirport().equals(airport1))
                 .collect(Collectors.toSet());
