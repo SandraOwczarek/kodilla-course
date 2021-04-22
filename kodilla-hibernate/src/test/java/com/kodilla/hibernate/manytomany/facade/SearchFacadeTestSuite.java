@@ -4,92 +4,54 @@ import com.kodilla.hibernate.manytomany.Company;
 import com.kodilla.hibernate.manytomany.Employee;
 import com.kodilla.hibernate.manytomany.dao.CompanyDao;
 import com.kodilla.hibernate.manytomany.dao.EmployeeDao;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.List;
 
-@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
 @SpringBootTest
 public class SearchFacadeTestSuite {
+    @Autowired
+    SearchFacade searchFacade;
     @Autowired
     CompanyDao companyDao;
     @Autowired
     EmployeeDao employeeDao;
-    @Autowired
-    SearchFacade searchFacade;
 
-    private Employee johnSmith = new Employee("John", "Smith");
-    private Employee stephanieClarckson = new Employee("Stephanie", "Clarckson");
-    private Employee lindaKovalsky = new Employee("Linda", "Kovalsky");
+    @Test
+    public void shouldFindCompanyByLetters() throws CompanyNotFoundException{
+        Company companyA = new Company("ABC");
+        Company companyB = new Company("company delta");
+        Company companyC = new Company("abccompany");
 
-    private Company softwareMachine = new Company("Software Machine");
-    private Company dataMaesters = new Company("Data Maesters");
-    private Company greyMatter = new Company("Grey Matter");
+        companyDao.saveAll(List.of(companyA, companyB, companyC));
 
-    private int softwareMachineId;
-    private int dataMaestersId;
-    private int greyMatterId;
+        List<Company> result = searchFacade.findCompany("ab");
 
-    @Before
-    public void prepareDummyData() {
-        softwareMachine.getEmployees().add(johnSmith);
-        dataMaesters.getEmployees().add(stephanieClarckson);
-        dataMaesters.getEmployees().add(lindaKovalsky);
-        greyMatter.getEmployees().add(johnSmith);
-        greyMatter.getEmployees().add(lindaKovalsky);
+        Assertions.assertEquals(2, result.size());
 
-        johnSmith.getCompanies().add(softwareMachine);
-        johnSmith.getCompanies().add(greyMatter);
-        stephanieClarckson.getCompanies().add(dataMaesters);
-        lindaKovalsky.getCompanies().add(dataMaesters);
-        lindaKovalsky.getCompanies().add(greyMatter);
+        companyDao.deleteAll(List.of(companyA, companyB, companyC));
 
-        companyDao.save(softwareMachine);
-        companyDao.save(dataMaesters);
-        companyDao.save(greyMatter);
-
-        softwareMachineId = softwareMachine.getId();
-        dataMaestersId = dataMaesters.getId();
-        greyMatterId = greyMatter.getId();
-    }
-
-    @After
-    public void doTheCleanUp() {
-        try {
-            companyDao.deleteById(softwareMachineId);
-            companyDao.deleteById(dataMaestersId);
-            companyDao.deleteById(greyMatterId);
-        } catch (Exception e) {
-            //do nothing
-        }
     }
 
     @Test
-    public void testFindCompanies() {
-        //Given
+    public void shouldFindEmployeeByLetters() throws EmployeeNotFoundException{
+        Employee employee1 = new Employee("maciej", "raj");
+        Employee employee2 = new Employee("taduesz", "kosciuszko");
+        Employee employee3 = new Employee("adam", "wozny");
+        Employee employee4 = new Employee("mateusz", "raj");
 
-        //When
-        List<Company> companies = searchFacade.findCompanies("Softwa");
-        //Then
-        Assert.assertEquals(1, companies.size());
-        //CleanUp
+        employeeDao.saveAll(List.of(employee1, employee2, employee3, employee4));
+        List<Employee> result = searchFacade.findEmployee("ra");
+
+        Assertions.assertEquals(2, result.size());
+
+        employeeDao.deleteAll(List.of(employee1, employee2, employee3, employee4));
     }
 
-    @Test
-    public void testFindEmployees() {
-        //Given
-
-        //When
-        List<Employee> employees = searchFacade.findEmployees("Smit");
-        //Then
-        Assert.assertEquals(1, employees.size());
-        //CleanUp
-    }
 }

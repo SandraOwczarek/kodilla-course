@@ -1,5 +1,5 @@
 rootProject.name = 'kodilla-course'
-include 'kodilla-jdbc'
+
 include 'kodilla-exception'
 include 'kodilla-good-patterns'
 include 'kodilla-hibernate'
@@ -8,4 +8,5 @@ include 'kodilla-spring-intro'
 include 'kodilla-spring-web'
 include 'kodilla-stream'
 include 'kodilla-testing'
+include 'kodilla-patterns2'
 

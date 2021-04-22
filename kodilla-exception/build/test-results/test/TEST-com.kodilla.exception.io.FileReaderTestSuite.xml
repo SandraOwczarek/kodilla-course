@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.exception.io.FileReaderTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-03-05T18:51:53" hostname="iMac-Sandra.local" time="0.013">
+<testsuite name="com.kodilla.exception.io.FileReaderTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-04-22T17:14:49" hostname="iMac-Sandra.local" time="0.018">
   <properties/>
-  <testcase name="testReadFileWithName()" classname="com.kodilla.exception.io.FileReaderTestSuite" time="0.011"/>
+  <testcase name="testReadFileWithName()" classname="com.kodilla.exception.io.FileReaderTestSuite" time="0.016"/>
   <testcase name="whenFileDoesntExistsReadFileShouldThrowException()" classname="com.kodilla.exception.io.FileReaderTestSuite" time="0.001"/>
   <system-out><![CDATA[I am gonna be here... always!
 I am gonna be here... always!

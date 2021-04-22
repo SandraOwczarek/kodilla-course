@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.exception.test.SecondChallengeTestSuite" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-03-05T18:51:53" hostname="iMac-Sandra.local" time="0.02">
+<testsuite name="com.kodilla.exception.test.SecondChallengeTestSuite" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-04-22T17:14:49" hostname="iMac-Sandra.local" time="0.031">
   <properties/>
-  <testcase name="testProbablyIWillThrowException1()" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.014"/>
+  <testcase name="testProbablyIWillThrowException1()" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.025"/>
   <testcase name="testProbablyIWillThrowException2()" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.001"/>
   <testcase name="testProbablyIWillThrowException3()" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.001"/>
   <testcase name="testProbablyIWillThrowException4()" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.002"/>
