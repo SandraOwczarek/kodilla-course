@@ -14,14 +14,7 @@ import java.util.Optional;
 
 @Service
 public class SearchFacade {
-    /*
-    Wyszukanie firmy po dowolnym fragmencie nazwy. Wskazówka: użyj nazwanego zapytania z wykorzystaniem frazy field LIKE :ARG,
-    gdzie za field należy wstawić nazwę pola z tabeli, natomiast do :ARG należy wstawić fragment nazwy otoczony z obu
-    stron znakami "%" (co zastępuje dowolny ciąg znaków).
-    Wyszukanie pracownika po dowolnym fragmencie nazwy. Wskazówka – użyj nazwanego zapytania z wykorzystaniem frazy field
-    LIKE :ARG, gdzie za field należy wstawić nazwę pola z tabeli, natomiast do :ARG należy wstawić fragment nazwiska
-    otoczony z obu stron znakami "%" (co zastępuje dowolny ciąg znaków).
-     */
+  
     private static final Logger LOGGER = LoggerFactory.getLogger(SearchFacade.class);
     @Autowired
     CompanyDao companyDao;
